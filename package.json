@@ -1,0 +1,8 @@
+{
+  "name": "semiconductor-llm-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"build":"node scripts/build.mjs", "check":"node scripts/check.mjs", "test:browser":"node scripts/browser-check.mjs"},
+  "devDependencies": {"marked":"^15.0.0", "playwright":"^1.51.0"}
+}

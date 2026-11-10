@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以五份教材建立的半導體製程 LLM Wiki 與零基礎教學簡報。"><title>半導體製程 LLM Wiki</title><link rel="stylesheet" href="slides/style.css"></head><body><header class="topbar"><a href="index.html">半導體製程 LLM Wiki</a><nav class="toolbar"><a href="slides/index.html">教學簡報</a></nav></header><main class="doc"><h1>半導體製程 LLM Wiki</h1>
+<p><strong>晶片上的微小結構怎麼做出來？</strong> 以薄膜、微影與蝕刻為主線，供沒有半導體背景的讀者入門。</p>
+<h2>開始閱讀</h2>
+<ul>
+<li>直接開啟 <a href="index.html">專案首頁</a>，或 <a href="slides/index.html">15 頁教學簡報</a>。不需網路或安裝套件。</li>
+<li><a href="wiki/index.html">可搜尋 Wiki</a> ／ <a href="wiki/README.html">Markdown Wiki 索引</a>。</li>
+<li>簡報用左右方向鍵、上一頁／下一頁按鈕或頁面選單切換。Home/End 跳首尾頁。</li>
+<li>第 9 頁提供膜厚計算，第 14 頁提供自我測驗。「列印全部」會列印所有頁面。</li>
+<li>第 2、3、4、6、7、8、11、12 頁都有教學配圖，點圖可放大。圖片與生成紀錄保留在 <code>slides/assets/</code>，來源與概念對應見 <a href="sources/visual-notes.html">圖像紀錄</a>。</li>
+</ul>
+<h2>作業交付對照</h2>
+<table>
+<thead>
+<tr>
+<th>要求</th>
+<th>成果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>先討論後生成</td>
+<td><a href="workflow/requirements.html">需求摘要</a>，主題已確認</td>
+</tr>
+<tr>
+<td>至少 ingest 5 篇</td>
+<td><a href="sources/README.html">來源索引</a>，3 份講義、2 本書的相關章節選讀</td>
+</tr>
+<tr>
+<td>LLM Wiki</td>
+<td><a href="wiki/README.html">7 個概念條目</a>，16 個可追溯主張</td>
+</tr>
+<tr>
+<td>教學 HTML</td>
+<td><a href="slides/index.html">簡報</a>，15 頁</td>
+</tr>
+<tr>
+<td>AGENTS.md</td>
+<td><a href="AGENTS.html">專案工作規則</a></td>
+</tr>
+<tr>
+<td>Loop / graph</td>
+<td><a href="workflow/controlled-graph.html">第二版流程圖、節點契約與執行方式</a></td>
+</tr>
+<tr>
+<td>一次實際檢查</td>
+<td><a href="workflow/v2-check-report.html">第二版檢查報告</a> ／ <a href="workflow/run-log.html">第一版執行紀錄</a></td>
+</tr>
+<tr>
+<td>反思</td>
+<td><a href="workflow/reflection.html">反思</a></td>
+</tr>
+</tbody></table>
+<p>這裡的 LLM Wiki 是 LLM 協助整理、以來源與概念連結維護的檔案知識庫，不是已部署的線上 LLM 服務。五份來源不是五個獨立實驗，部分講義引用同一本教科書。</p>
+<h2>維護與重建</h2>
+<p>成品 HTML 已附在專案內，閱讀不需 Node.js。編輯 Markdown、slides/content.json 或樣式後，可執行：</p>
+<pre><code class="language-text">npm install
+npm run build
+npm run check
+npm run test:browser
+</code></pre>
+<p><code>build</code> 使用 marked 轉換 Markdown，保留靜態 HTML。<code>check</code> 檢查引用與本機連結。瀏覽檢查需要 Playwright 可用的瀏覽器，可先執行 <code>npx playwright install chromium</code>，或用環境變數 <code>BROWSER_EXECUTABLE</code> 指定已安裝 Edge／Chrome。這些是維護工具，不會在讀者瀏覽時載入。</p>
+<h2>GitHub 準備</h2>
+<p>已初始化本機 Git，尚未建立遠端或推送。從專案根目錄發布靜態網站即可使用相對連結；GitHub Pages 可選擇對應分支的 <code>/ (root)</code>。這只是部署準備，尚未有公開網址。</p>
+<p><code>raw/</code> 預設忽略原始教材，<code>tmp/</code> 忽略擷取文字、書頁影像、瀏覽器檢查結果與暫存檔。公開內容只有整理後的筆記、來源識別、頁碼及教學成品。尚未指定專案授權條款。</p>
+<h1>第二版流程調整</h1>
+<p>第二版已執行大綱確認、逐頁稿、獨立初審、一次內容修訂、獨立複審、排版與呈現檢查。第一版內容快照與本輪事件保留在 <code>workflow/runs/v2-outline/</code>。</p>
+<ul>
+<li><a href="workflow/controlled-graph.html">第二版 Graph 與 Loop</a></li>
+<li><a href="workflow/outline-v2.html">十五頁大綱與配圖計畫</a></li>
+<li><a href="workflow/v2-check-report.html">本次執行與檢查</a></li>
+</ul>
+</main></body></html>
