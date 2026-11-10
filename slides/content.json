@@ -1,0 +1,416 @@
+[
+  {
+    "title": "晶片上的微小結構\n怎麼做出來？",
+    "subtitle": "半導體製程入門",
+    "kind": "cover",
+    "body": "薄膜、微影與蝕刻",
+    "detail": "給沒有半導體背景的你。一段製程，一次看懂材料如何變成圖案。",
+    "wiki": "W01",
+    "claims": [
+      "C01",
+      "C02"
+    ],
+    "hero": true
+  },
+  {
+    "title": "晶圓與晶片",
+    "subtitle": "先認識加工的對象",
+    "kind": "terms",
+    "items": [
+      [
+        "晶圓 Wafer",
+        "製造元件的基底平台"
+      ],
+      [
+        "晶片 Die",
+        "晶圓上的個別電路區域"
+      ]
+    ],
+    "body": "矽是半導體材料；摻雜 Doping 是加入少量特定雜質，調整導電特性。",
+    "detail": "本教學聚焦表面加工。摻雜、熱處理、互連與其他步驟同樣重要，不會只靠一次蝕刻完成晶片。",
+    "wiki": "W01",
+    "claims": [
+      "C01",
+      "C02",
+      "C16"
+    ],
+    "image": {
+      "src": "assets/wafer.png",
+      "layout": "split",
+      "alt": "左方晶圓包含多個矩形晶片區域，右方放大其中一顆裸晶。",
+      "caption": "左：晶圓。右：其中一個晶片區域的放大示意。",
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "製程中的一段圖案轉移",
+    "subtitle": "先看每一步的任務",
+    "kind": "visual",
+    "body": "這段加工會依設計搭配其他製程反覆使用。",
+    "detail": "薄膜 Thin film 是表面的一層材料；微影 Lithography 利用感光的光阻 Photoresist 定義圖案；蝕刻 Etching 移除指定材料。這段流程省略清洗、烘烤、對準與量測，不能當作完整製造配方。",
+    "wiki": "W03",
+    "claims": [
+      "C02",
+      "C05"
+    ],
+    "image": {
+      "src": "assets/pattern.png",
+      "layout": "wide",
+      "alt": "四個剖面依序呈現連續薄膜、光阻開口、蝕刻薄膜、去除光阻。",
+      "caption": "灰：基底；藍：薄膜；橘：光阻。基底保持不變，開口中的薄膜在蝕刻後移除。",
+      "labels": [
+        "① 形成薄膜",
+        "② 微影後的光阻",
+        "③ 蝕刻薄膜",
+        "④ 去除光阻"
+      ],
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "薄膜承擔不同功能",
+    "subtitle": "材料與位置決定用途",
+    "kind": "terms",
+    "items": [
+      [
+        "導體",
+        "提供導電路徑"
+      ],
+      [
+        "絕緣體",
+        "隔開不應直接導通的區域"
+      ],
+      [
+        "半導體",
+        "形成所需的材料層"
+      ]
+    ],
+    "body": "薄膜 Thin film 是表面的一層材料，可透過沉積或成長形成。",
+    "detail": "沉積 Deposition 是把材料送到表面並形成材料層。形成薄膜後，還需依設計定義形狀與位置。",
+    "wiki": "W02",
+    "claims": [
+      "C03"
+    ],
+    "image": {
+      "src": "assets/films.png",
+      "layout": "split",
+      "alt": "灰色基底上堆疊藍色、淺色及橘色三層材料，各層邊界清楚。",
+      "caption": "灰色為基底，上方不同色層表示不同材料。此堆疊只示意層狀結構，不指定真實元件或材料順序。",
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "兩類沉積方式",
+    "subtitle": "CVD 與 PVD",
+    "kind": "compare",
+    "headers": [
+      "方法",
+      "如何理解"
+    ],
+    "rows": [
+      [
+        "化學氣相沉積 CVD",
+        "以化學反應形成薄膜"
+      ],
+      [
+        "物理氣相沉積 PVD",
+        "以物理方式供應材料，包含蒸鍍、濺鍍"
+      ]
+    ],
+    "body": "材料抵達表面後，還會移動並逐步形成薄膜。",
+    "detail": "CVD：Chemical vapor deposition；PVD：Physical vapor deposition。蒸鍍 Evaporation 使來源材料汽化後到達表面；濺鍍 Sputtering 藉粒子轟擊使來源材料離開並沉積。薄膜品質仍受材料及製程條件影響。",
+    "wiki": "W02",
+    "claims": [
+      "C04",
+      "C15"
+    ]
+  },
+  {
+    "title": "微影先定義光阻圖案",
+    "subtitle": "微影 Lithography；光阻 Photoresist 是感光材料",
+    "kind": "statement",
+    "body": "曝光與顯影，讓光阻形成保護區與開口。",
+    "detail": "曝光區最後留下或去除，取決於光阻類型。此處只說明功能，不把正負光阻的行為混成同一種。",
+    "wiki": "W03",
+    "claims": [
+      "C05"
+    ],
+    "image": {
+      "src": "assets/pattern.png",
+      "layout": "wide",
+      "alt": "四個剖面依序呈現連續薄膜、光阻開口、蝕刻薄膜、去除光阻。",
+      "caption": "聚焦第②步：微影完成後，橘色光阻留下開口；下方藍色薄膜尚未被蝕刻。",
+      "labels": [
+        "① 形成薄膜",
+        "② 微影後的光阻",
+        "③ 蝕刻薄膜",
+        "④ 去除光阻"
+      ],
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "蝕刻把圖案轉入材料",
+    "subtitle": "兩次轉移，各有任務",
+    "kind": "terms",
+    "items": [
+      [
+        "第一次",
+        "把設計圖案轉到光阻"
+      ],
+      [
+        "第二次",
+        "把開口圖案轉到薄膜"
+      ]
+    ],
+    "body": "蝕刻遮罩 Etch mask 保護不想移除的區域。",
+    "detail": "蝕刻遮罩可用光阻、氧化物或氮化物構成。微影光罩 Photomask 定義曝光圖案，與保護材料表面的蝕刻遮罩不是同一物件。",
+    "wiki": "W03",
+    "claims": [
+      "C05",
+      "C06"
+    ],
+    "image": {
+      "src": "assets/pattern.png",
+      "layout": "wide",
+      "alt": "四個剖面依序呈現連續薄膜、光阻開口、蝕刻薄膜、去除光阻。",
+      "caption": "比較第②與③步：蝕刻移除光阻開口內的藍色薄膜，把圖案轉到材料；第④步才去除光阻。",
+      "labels": [
+        "① 形成薄膜",
+        "② 微影後的光阻",
+        "③ 蝕刻薄膜",
+        "④ 去除光阻"
+      ],
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "蝕刻要分開看三件事",
+    "subtitle": "快慢、方向與材料差異",
+    "kind": "terms",
+    "items": [
+      [
+        "速率 Etch rate",
+        "每分鐘移除多少厚度？"
+      ],
+      [
+        "方向性 Directionality",
+        "向下刻，還是也向旁邊刻？"
+      ],
+      [
+        "選擇比 Selectivity",
+        "目標與參照材料的移除速率比"
+      ]
+    ],
+    "body": "選擇比高，不代表側壁一定垂直。",
+    "detail": "方向性描述方向之間的差別；選擇比描述材料之間的差別。",
+    "wiki": "W04",
+    "claims": [
+      "C07",
+      "C08",
+      "C13"
+    ],
+    "image": {
+      "src": "assets/etch.png",
+      "layout": "split",
+      "alt": "左方藍色材料被側向移除，橘色遮罩下方產生空隙；右方側壁與遮罩開口對齊。",
+      "caption": "左：側蝕使開口往遮罩下方擴大。右：較垂直的側壁。以簡化直線呈現邊界，不是等向蝕刻的精確輪廓。",
+      "labels": [
+        "側向移除",
+        "垂直側壁"
+      ],
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "選擇比的簡單計算",
+    "subtitle": "假設算例，不是設備規格",
+    "kind": "calculator",
+    "body": "目標薄膜 100 nm/min，光阻 5 nm/min。",
+    "detail": "假設速率恆定、表面均勻，未加入過蝕刻 Overetch：為確保各處刻穿而延長的蝕刻。實際條件改變時需重新評估。",
+    "wiki": "W04",
+    "claims": [
+      "C07",
+      "C14"
+    ],
+    "calculatorMarkup": "<div class=\"calc\"><div><label for=\"thickness\">目標膜厚：<output id=\"thickness-value\" for=\"thickness\">200 nm</output></label><input id=\"thickness\" type=\"range\" min=\"100\" max=\"500\" step=\"50\" value=\"200\"><p>拖動膜厚，觀察需要的時間與光阻消耗。</p></div><div class=\"result\">選擇比 <strong>20</strong><br>蝕刻時間 <span id=\"time\">2.0</span> 分鐘<br>光阻消耗 <span id=\"loss\">10.0</span> nm</div></div>"
+  },
+  {
+    "title": "濕式與乾式蝕刻",
+    "subtitle": "分類不能取代條件",
+    "kind": "compare",
+    "headers": [
+      "方式",
+      "基本機制",
+      "注意"
+    ],
+    "rows": [
+      [
+        "濕式 Wet etching",
+        "液態藥液的化學作用",
+        "常見等向性，但有晶向例外"
+      ],
+      [
+        "乾式 Dry etching",
+        "可含物理、化學作用",
+        "不保證一定垂直蝕刻"
+      ]
+    ],
+    "body": "選方法時，要同時看材料、形狀與損傷。",
+    "detail": "等向性 Isotropy 指各方向移除速率相同。晶向 Crystal orientation 是晶體內原子排列的方向；矽的某些濕式蝕刻在不同晶向速率不同。乾式也可能以化學作用為主。",
+    "wiki": "W05",
+    "claims": [
+      "C09",
+      "C10",
+      "C13"
+    ]
+  },
+  {
+    "title": "RIE 結合兩種作用",
+    "subtitle": "反應性離子蝕刻 Reactive ion etching",
+    "kind": "terms",
+    "items": [
+      [
+        "離子作用",
+        "提供方向性的轟擊"
+      ],
+      [
+        "反應性物種",
+        "參與材料表面的化學反應"
+      ]
+    ],
+    "body": "電漿 Plasma 包含電子、離子與中性物種。",
+    "detail": "反應性中性物種不等於帶電離子。RIE 的實際效果受氣體、材料、能量與其他條件影響。",
+    "wiki": "W06",
+    "claims": [
+      "C10",
+      "C11"
+    ],
+    "image": {
+      "src": "assets/rie.png",
+      "layout": "split",
+      "alt": "帶加號的藍色離子朝薄膜開口前進，橘色中性物種從其他方向抵達表面。",
+      "caption": "藍色「＋」為正離子，橘色小球為反應性中性物種。箭頭只表示作用方向，未按實際粒子尺寸或軌跡繪製。",
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "真空讓氣體環境可控制",
+    "subtitle": "平均自由程 Mean free path：兩次碰撞間的平均距離",
+    "kind": "statement",
+    "body": "其他條件相近時，壓力降低，平均自由程增加。",
+    "detail": "真空仍有氣體。壓力會影響碰撞與傳輸，但不能推論「壓力越低，薄膜品質一定越好」。",
+    "wiki": "W06",
+    "claims": [
+      "C12",
+      "C15"
+    ],
+    "image": {
+      "src": "assets/vacuum.svg",
+      "layout": "split",
+      "alt": "左側較高壓力有密集氣體粒子，右側較低壓力粒子較稀疏；橘色折線比較碰撞間距。",
+      "caption": "同種氣體、相同溫度下，壓力較低時平均自由程較長。折線只是概念示意，不是實測軌跡。",
+      "disclosure": "AI 概念示意，非實際比例。點圖可放大。"
+    }
+  },
+  {
+    "title": "完成圖案，也要顧及品質",
+    "subtitle": "一個指標不夠",
+    "kind": "sequence",
+    "items": [
+      [
+        "是否刻穿？",
+        "膜厚與速率有差異"
+      ],
+      [
+        "是否傷到其他層？",
+        "檢查遮罩與下層消耗"
+      ],
+      [
+        "是否一致？",
+        "比較不同位置的結果"
+      ]
+    ],
+    "body": "過蝕刻可協助刻穿，卻會增加其他材料的損耗。",
+    "detail": "實際製程還要考慮產物移除、均勻性與損傷。這份簡報只提供概念框架。",
+    "wiki": "W04",
+    "claims": [
+      "C13",
+      "C14"
+    ]
+  },
+  {
+    "title": "三題，檢查你是否理解",
+    "subtitle": "可以重選，答案附理由",
+    "kind": "quiz",
+    "body": "",
+    "detail": "做錯時，從本頁的 Wiki 連結回顧概念。",
+    "wiki": "W07",
+    "claims": [
+      "C05",
+      "C07",
+      "C09",
+      "C08"
+    ],
+    "questions": [
+      [
+        "1. 本教學中，誰把光阻開口轉移到薄膜？",
+        [
+          "曝光",
+          "蝕刻"
+        ],
+        1,
+        "微影定義光阻圖案，蝕刻再移除暴露的材料。"
+      ],
+      [
+        "2. 選擇比高，是否代表側壁一定垂直？",
+        [
+          "是",
+          "否"
+        ],
+        1,
+        "選擇比比較材料速率，方向性比較不同方向。"
+      ],
+      [
+        "3. 所有濕式蝕刻都是等向性嗎？",
+        [
+          "是",
+          "否"
+        ],
+        1,
+        "矽的晶向相依蝕刻是例外。"
+      ]
+    ]
+  },
+  {
+    "title": "閱讀與延伸",
+    "subtitle": "五份來源，一份可追溯的 Wiki",
+    "kind": "sources",
+    "body": "每頁下方都能回到 Wiki 與證據頁碼。",
+    "detail": "三份講義為 2005 年教材，書籍用於基礎原理。厚書採章節選讀，這份簡報不代表最新製程現況。",
+    "wiki": "W07",
+    "claims": [],
+    "sources": [
+      {
+        "id": "S01",
+        "title": "Vacuum Technology and film growth"
+      },
+      {
+        "id": "S02",
+        "title": "Dry Etching"
+      },
+      {
+        "id": "S03",
+        "title": "Etching（含課程回饋）"
+      },
+      {
+        "id": "S04",
+        "title": "Microchip Fabrication, 4th edition"
+      },
+      {
+        "id": "S05",
+        "title": "Silicon VLSI Technology: Fundamentals, Practice and Modeling"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">壓力與平均自由程概念比較</title><desc id="desc">同種氣體與相同溫度下，較高壓力區有較密集粒子，較低壓力區較稀疏。示意折線顯示碰撞間距差異，不代表實測軌跡。</desc>
+<rect width="1000" height="540" fill="#f5f3eb"/>
+<g font-family="Microsoft JhengHei,sans-serif" fill="#152e40" text-anchor="middle"><text x="250" y="48" font-size="30">較高壓力</text><text x="750" y="48" font-size="30">較低壓力</text></g>
+<g stroke="#526574" stroke-width="2" fill="#eaf0f4"><rect x="30" y="80" width="440" height="330" rx="10"/><rect x="530" y="80" width="440" height="330" rx="10"/></g>
+<g fill="#144db5">
+<circle cx="80" cy="130" r="10"/><circle cx="160" cy="130" r="10"/><circle cx="240" cy="130" r="10"/><circle cx="320" cy="130" r="10"/><circle cx="400" cy="130" r="10"/>
+<circle cx="120" cy="200" r="10"/><circle cx="200" cy="200" r="10"/><circle cx="280" cy="200" r="10"/><circle cx="360" cy="200" r="10"/><circle cx="430" cy="200" r="10"/>
+<circle cx="80" cy="270" r="10"/><circle cx="160" cy="270" r="10"/><circle cx="240" cy="270" r="10"/><circle cx="320" cy="270" r="10"/><circle cx="400" cy="270" r="10"/>
+<circle cx="120" cy="350" r="10"/><circle cx="200" cy="350" r="10"/><circle cx="280" cy="350" r="10"/><circle cx="360" cy="350" r="10"/><circle cx="430" cy="350" r="10"/>
+<circle cx="600" cy="140" r="10"/><circle cx="860" cy="160" r="10"/><circle cx="700" cy="300" r="10"/><circle cx="910" cy="350" r="10"/>
+</g>
+<g fill="none" stroke="#b94724" stroke-width="5" stroke-linejoin="round"><path d="M60 220 L120 200 L160 270 L200 200 L240 270"/><path d="M550 230 L860 160 L700 300"/></g>
+<g font-family="Microsoft JhengHei,sans-serif" fill="#152e40" text-anchor="middle" font-size="25"><text x="250" y="454">平均碰撞間距較短</text><text x="750" y="454">平均碰撞間距較長</text><text x="500" y="510" font-size="22">氣體種類、溫度相同；折線為概念示意，非實測軌跡</text></g>
+</svg>

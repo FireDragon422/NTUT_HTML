@@ -1,0 +1,38 @@
+[
+  {
+    "name": "wafer",
+    "prompt": "Scientific educational illustration for a Traditional Chinese beginner semiconductor HTML presentation. Landscape 3:2. A precise stylized 3D silicon wafer, circular disk seen obliquely with a regular grid of many identical rectangular die regions. At right show one enlarged separate bare silicon die, connected to ONE highlighted rectangular region of the wafer by a thin leader line. The die is a simple flat rectangle with fine abstract circuit pattern, not a packaged chip with pins. Premium restrained textbook illustration, warm off-white #f5f3eb background, navy #152e40, cobalt #144db5, restrained copper accents. No labels, no text, no numbers, no logos. Diagram is conceptual, no fabricated numeric scale. Main subjects centered and large.",
+    "file": "wafer.png",
+    "method": "built-in image_gen",
+    "type": "AI-generated conceptual illustration"
+  },
+  {
+    "name": "films",
+    "prompt": "Scientific educational textbook illustration, landscape 3:2, warm off-white #f5f3eb background, navy and cobalt palette with restrained orange. Show one large clean isometric cutaway rectangular block: thick gray silicon substrate, above it exactly three distinct continuous flat thin material layers: lower blue, middle pale cream with blue boundary, upper copper. Show the front cross section clearly with physically consistent layered geometry, layers perfectly aligned and same footprint. To the right leave room with three thin leader lines from each of the thin layers but NO labels. No electronic components, no transistors, no arrows, no gradients implying mixing. This is a conceptual stack, not a real device cross-section. High-quality simple 3D educational rendering, no words no numbers.",
+    "file": "films.png",
+    "method": "built-in image_gen",
+    "type": "AI-generated conceptual illustration"
+  },
+  {
+    "name": "pattern",
+    "prompt": "Scientific educational process diagram for semiconductor fabrication beginners. Landscape 16:9, four equal panels horizontally on warm off-white #f5f3eb background with generous whitespace, simple accurate flat cross sections. Same substrate in every panel: wide thick gray rectangle bottom; blue thin film on top. Panel 1: continuous unpatterned blue film on gray substrate, NO resist. Panel 2: same continuous blue film, and two orange rectangular resist blocks above blue film at left and right, leaving a wide central gap exposing blue film. Panel 3: same two orange resist blocks at left and right, blue film remains ONLY underneath orange blocks, blue film completely removed in the central gap exposing gray substrate; gray substrate remains continuous, unetched and flat. Panel 4: orange resist completely removed, the same two blue film blocks remain at left and right with a central gap to the unchanged gray substrate. Panels separated by small right arrows. Absolutely preserve correspondence across panels. No labels, no numbers, no text, no title, no watermark. Navy outlines, cobalt blue film, copper-orange resist, gray silicon. Crisp professional textbook visual.",
+    "file": "pattern.png",
+    "method": "built-in image_gen",
+    "type": "AI-generated conceptual illustration"
+  },
+  {
+    "name": "etch",
+    "prompt": "Scientific educational comparison diagram. Landscape 3:2, two equal side-by-side cross sections on warm off-white #f5f3eb background. Thick gray substrate bottom in both; a thick cobalt blue target film above substrate; two thin orange rectangular mask blocks on top of the blue layer with a central opening. LEFT: isotropic etching: cavity through blue layer from opening, rounded undercut expanding sideways UNDER the inner mask edges on BOTH sides, leaving small mask overhangs; bottom of cavity reaches but does not etch the continuous flat gray substrate. RIGHT: directional etching: central rectangular cavity through blue layer with vertical straight sidewalls aligned exactly below the inner orange mask edges, no lateral undercut; substrate continuous unchanged. Use exactly identical mask opening widths and layer thicknesses in both. Add thin navy small arrows indicating down and sideways inside LEFT cavity, only down inside RIGHT cavity. Not wet versus dry classification, only ideal geometric comparison of directions. No text, no labels, no numbers. Crisp accurate textbook diagram.",
+    "revision": "Revise ONLY LEFT cross-section into a very simplified diagram of lateral undercut, NOT an exact isotropic profile. Keep orange mask blocks, right panel and gray substrate unchanged. LEFT BLUE FILM must consist of two narrow rectangular vertical pillars located only at far left and far right underneath the OUTER portions of the orange masks. Remove blue material underneath the INNER half of EACH orange mask so the masks visibly overhang a WIDE RECTANGULAR opening. Blue cavity width must be substantially WIDER than orange mask central gap along its entire height. Make the cavity sidewalls straight vertical for clarity. No blue touching inner edges of orange mask. Remove all bulb, bottle, hourglass, oval shapes. Preserve small arrows showing downward and sideways inside the left opening. This comparison is undercut versus aligned edges, not exact physical etch front. No text.",
+    "file": "etch.png",
+    "method": "built-in image_gen",
+    "type": "AI-generated conceptual illustration"
+  },
+  {
+    "name": "rie",
+    "prompt": "Scientific educational illustration of reactive ion etching mechanism, landscape 3:2, warm off-white #f5f3eb background. Close-up schematic cross section of a patterned wafer surface in a plasma environment, not a full reactor. Bottom: continuous gray substrate, blue target film on top, two orange mask blocks left and right with center opening. Above surface: several cobalt circular positive ions each marked with a small plus sign, with straight downward arrows heading toward the exposed blue film in center opening. Separate orange small uncharged circles representing reactive neutral species approach the exposed center film from oblique directions, with a few thin curved arrows. Keep all objects clearly distinct. No electrons needed, no magnetic field, no glowing lightning. Do not draw ions originating inside substrate. Simple precise professional textbook art in navy/cobalt/copper palette. No labels or words except plus signs inside positive ions. Generous whitespace, large legible geometry.",
+    "file": "rie.png",
+    "method": "built-in image_gen",
+    "type": "AI-generated conceptual illustration"
+  }
+]
