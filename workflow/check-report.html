@@ -1,0 +1,97 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以五份教材建立的半導體製程 LLM Wiki 與零基礎教學簡報。"><title>實際執行檢查報告</title><link rel="stylesheet" href="../slides/style.css"></head><body><header class="topbar"><a href="../index.html">半導體製程 LLM Wiki</a><nav class="toolbar"><a href="../slides/index.html">教學簡報</a></nav></header><main class="doc"><h1>實際執行檢查報告</h1>
+<p><strong>最新第二版：</strong> <a href="v2-check-report.html">實際執行與87項瀏覽檢查</a>。以下66項結果為第一版歷史。</p>
+<p>日期：2026-11-10（Asia/Taipei）。結果：第一版已完成，以下列出實際執行的檢查，未以規劃內容冒充實測。</p>
+<h2>補圖版本檢查</h2>
+<p>使用者指出初版缺少圖片後，加入五張內建 image_gen 生成的教學示意圖，分別放於第 2、3、4、8、11 頁，封面另使用晶圓圖作為背景。生成提示詞及概念對應見 <a href="../sources/visual-notes.html">教學圖像紀錄</a>。</p>
+<p>重新執行瀏覽檢查：<strong>66/66 通過</strong>，包含五張圖片實際載入與替代文字。已檢視五個配圖頁、封面與手機流程頁，並檢視實際列印的流程圖頁及 RIE 頁。列印輸出仍為 <strong>15 頁</strong>，每頁保有 Wiki 引用。手機流程圖可水平滑動查看四步，圖片可點擊放大。</p>
+<p>蝕刻圖生成初稿的曲面形狀不適合當作精確等向蝕刻示範，因此改為清楚顯示側蝕空隙的簡化直線邊界，並註明其限制。所有圖像均是概念示意，非實物照片、非實際比例。</p>
+<p>以下保留初版檢查過程，最新斷言紀錄為 browser-results.json 的 66 項結果。</p>
+<h2>成果與內容檢查</h2>
+<table>
+<thead>
+<tr>
+<th>檢查</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>來源 ingest</td>
+<td>5/5；三份講義與兩本書的指定章節，含來源編號、頁碼、限制與採用主張</td>
+</tr>
+<tr>
+<td>知識庫</td>
+<td>7 條目、16 項主張，來源頁碼均位於對應 PDF 總頁數範圍內</td>
+</tr>
+<tr>
+<td>教學成品</td>
+<td>15 頁；知識頁均連到 Wiki 與證據，來源頁另列五份資料</td>
+</tr>
+<tr>
+<td>來源依賴</td>
+<td>已記錄 S02/S03 引用 S05，不宣稱五個獨立研究</td>
+</tr>
+<tr>
+<td>誤解檢查</td>
+<td>濕式晶向例外、乾式化學作用、方向性與選擇比區別均有保留</td>
+</tr>
+<tr>
+<td>靜態引用與連結</td>
+<td><code>node scripts/check.mjs</code> 通過，未發現缺失來源、越界頁碼、斷裂連結或未映射的簡報主張</td>
+</tr>
+<tr>
+<td>原始資料保護</td>
+<td><code>git check-ignore</code> 確認 raw/example.pdf 與 tmp/browser/report.json 會被排除，Git 狀態未列出原始 PDF 或暫存資料</td>
+</tr>
+</tbody></table>
+<h2>瀏覽檢查</h2>
+<p>在本機 Edge（Playwright 背景執行）直接開啟 file URL，未依賴網站伺服器或 CDN。</p>
+<ul>
+<li>60 項斷言全部通過，無頁面程式錯誤或資源載入失敗。</li>
+<li>1440 × 900 桌面：逐頁切換、首頁/末頁邊界、左右鍵與選單操作。</li>
+<li>390 × 844 手機尺寸：15 頁均沒有水平溢出，長內容可垂直捲動。</li>
+<li>計算器：膜厚設為 400 nm 時，100 nm/min 對應 4.0 分鐘，5 nm/min 光阻消耗 20.0 nm。</li>
+<li>三題測驗：錯誤與正確答案都顯示對應回饋，允許重新選答。</li>
+<li>Wiki：搜尋命中、無結果提示，以及點選目錄後清除搜尋均通過。</li>
+<li>列印媒體：15 個簡報區段皆可見。</li>
+<li>實際列印為暫存 PDF 後，用 PDF 解析器確認 <strong>15 頁</strong>，每頁都有 Wiki 引用文字；已檢視列印頁面總覽。</li>
+<li>已檢視桌面與手機逐頁截圖總覽，並放大檢查計算頁、流程頁、手機測驗頁與 workflow 圖。</li>
+</ul>
+<p>瀏覽斷言紀錄保留於 <a href="browser-results.json">browser-results.json</a>。截圖與列印暫存留在被忽略的 tmp/browser/，不是公開教材的一部分。沒有進行真實手機硬體、Safari 或 Firefox 測試。</p>
+<h2>本次發現並修正的問題</h2>
+<table>
+<thead>
+<tr>
+<th>問題</th>
+<th>怎麼找到</th>
+<th>修正</th>
+<th>複驗</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第 3 頁使用 C02，但 W03 尚未收錄</td>
+<td>靜態主張映射檢查失敗</td>
+<td>先補 W03 的反覆加工說明與 S04 頁碼，再重建 HTML</td>
+<td>引用檢查通過</td>
+</tr>
+<tr>
+<td>背景瀏覽器無法在受限環境啟動</td>
+<td>瀏覽測試啟動失敗</td>
+<td>透過核准的執行方式重新啟動背景瀏覽器</td>
+<td>成功完成檢查</td>
+</tr>
+<tr>
+<td>列印實際產生 23 頁，部分引用孤立成頁</td>
+<td>實際 PDF 頁數與影像檢查</td>
+<td>區分整頁與內部元件樣式名稱，修正列印排版</td>
+<td>重新輸出 15 頁，每頁均有引用</td>
+</tr>
+</tbody></table>
+<p>最後一項說明「列印 CSS 中所有簡報都可見」仍不足以證明列印正確，因此補上實際輸出頁數及內容檢查。</p>
+<h2>限制與待使用者驗收</h2>
+<ul>
+<li>兩本厚書採相關章節選讀，未完成整書精讀或 OCR。</li>
+<li>引用檢查能驗證結構與頁碼範圍，不能取代領域專家的學術審查。</li>
+<li>沒有真實初學者學習成效測試，授課時間仍是規劃估計。</li>
+<li>本機 Git 已初始化；尚未設定遠端、提交版本或推送 GitHub，沒有公開網址。</li>
+</ul>
+</main></body></html>

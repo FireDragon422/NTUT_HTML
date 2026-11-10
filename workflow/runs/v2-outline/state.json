@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "created": "2026-11-10T11:32:44.036Z",
+  "outline_sha256": "b9b685df9616a4e7433cc04414fafc1bfbce13447b3c81a2351b82f6a736b4c1",
+  "inputs": {
+    "wiki/W01.md": "c72ab055791a3824b26b88523761af33fa25ba961764b71058d71c6e87cacd80",
+    "wiki/W03.md": "e3ae6ad385148d3ae39329b70a5a395255f871bc09e02797c15ada5d5b395410",
+    "wiki/W02.md": "f8eba9c8a3b6e61afe50c617e674cddbe16d5fc8226c14e5c3c6ef79d882e6df",
+    "wiki/W04.md": "bd1aabb1a46a0074b9e642e83ecd95fd67a320f2e9dbca5e266973bb52a96914",
+    "wiki/W05.md": "5297d1818ced469d0ccd8bdff9946a361e1d6d83e4548a34d27fe2adfd6e48bd",
+    "wiki/W06.md": "ee509c2270ce91fb331b53655c60f7c93ebe04d14dd8698df2de190f83d852a8",
+    "wiki/W07.md": "a7c8ce19fc8849be217cca67949faac72a46a48fc6a2daeb8de32dd03f9b7b58",
+    "sources/evidence.json": "a94109c548c29ba49c361aa18897b7236ad0d05fe44ad2b42f624c4b09ffe55b",
+    "sources/manifest.json": "a1dc55f3de4e4ad051b1c81cbf0e08068cafd1a63d2a509c2af63d378232143b",
+    "slides/content.json": "1ea765ca95f1bdf204863e0cbf4b101f0f9408c3a78d948f49fe7895028bf115",
+    "sources/S01.md": "d6f9beb7187a5a2163a3f9d8e94f6ebd44090da7a5eb9d8f0b6f4fb8f87fde2a",
+    "sources/S02.md": "8a90d9130af742dabd7144590b88a2f8785c496aaf7150474e5421a45900afca",
+    "sources/S03.md": "cb55fbefab8cb8c096316922c7d3265f47dcf3f160ae97b3c6946a5cc0a31aaf",
+    "sources/S04.md": "951ea736736f1f85899657beb6c9b9c529045e591d8e23576091f15df35a95af",
+    "sources/S05.md": "2844d5231ed6e847e61a99c84acaa12a5d758c4fa1eb4b804b4e80ce3948f35c"
+  },
+  "approval": {
+    "quote": "可以,沒問題",
+    "date": "2026-11-10T11:39:26.036Z",
+    "outline_sha256": "b9b685df9616a4e7433cc04414fafc1bfbce13447b3c81a2351b82f6a736b4c1"
+  },
+  "independent_review": {
+    "path": "workflow/runs/v2-outline/review-2.json",
+    "sha256": "80d873e5453436ad0c0de9e8795696f32cf942559ba17d386db07bd922bdcf13",
+    "verdict": "pass"
+  },
+  "revision_limit": 2,
+  "executed": [
+    "retrieval",
+    "coverage",
+    "source_note_cards",
+    "outline",
+    "approve",
+    "freeze",
+    "review",
+    "refresh",
+    "render",
+    "complete"
+  ],
+  "not_executed": [],
+  "revisions": 1,
+  "frozen": {
+    "workflow/runs/v2-outline/draft.json": "b2586845fed0a958f702fb5a87e91d0c7da5496f0a4b115851601a15c16469ce",
+    "slides/assets/wafer.png": "2450fa28ba4da13d16dc2d1e553665756f3c647ac8ed37caa4ae33442bf4f617",
+    "slides/assets/pattern.png": "574eb61bc753f2a6ee89e5c2474233c98905b86631ab28b0fbd42ddd85b2f540",
+    "slides/assets/films.png": "92546f295550d2140b97424359e217ac1905ddd8bfda264fd5e64a563a7416f8",
+    "slides/assets/etch.png": "58ca3e5bdf3bf62c6cce0d20f02f33567e10e6d0c75474f64f257e88dc594bd3",
+    "slides/assets/rie.png": "0517a585f4f7d7e77b811d4a8aaeb8780f923d72e5a180b5d74cb743d338b033",
+    "slides/assets/vacuum.svg": "4630c32a06f130b5c3df784257a4acdbf12510bf5afa09f5c5113ae48672e813"
+  },
+  "rendered": {
+    "slides/index.html": "4d33885ed4dda79c6135cbde4b2d2fdfdc9676e7b0b3df717d4e29c8590200c9",
+    "slides/content.json": "b2586845fed0a958f702fb5a87e91d0c7da5496f0a4b115851601a15c16469ce",
+    "slides/app.js": "553ad79ad76d25f6e82c4a9be8e0c7252c0707da5fde071559f3560ebb0b6af0",
+    "slides/style.css": "fb2daae014f310e204664a018e3cf6e126c580421f37f86814e12b930a012313",
+    "scripts/build.mjs": "175c7d43651110151dc2793563c9630df1371a7206a3ff1f941b13d6b98cb291"
+  }
+}

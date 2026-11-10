@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以五份教材建立的半導體製程 LLM Wiki 與零基礎教學簡報。"><title>第二版：有關卡與局部重做的 Graph</title><link rel="stylesheet" href="../slides/style.css"></head><body><header class="topbar"><a href="../index.html">半導體製程 LLM Wiki</a><nav class="toolbar"><a href="../slides/index.html">教學簡報</a></nav></header><main class="doc"><h1>第二版：有關卡與局部重做的 Graph</h1>
+<p><img src="graph-v2.svg" alt="第二版 Graph 與局部退回路線"></p>
+<p>這份流程依老師的<a href="https://drive.google.com/file/d/15qN58f28Hxfl0v32z_Nbw2C3F6sEEjr8/view">課堂講義</a>調整。第一版簡報保留；既有測試結果只代表第一版檢查，不能當成第二版獨立審查通過。</p>
+<h2>Graph 與 Loop 分別負責什麼</h2>
+<p>Graph 決定節點順序、分支、誰能讀寫哪些成果。Loop 是某個節點失敗後，依回饋重做並重新檢查的循環；不是把所有工作從頭再做一遍。</p>
+<p>主線：查詢 Wiki → 覆蓋檢查 → 每來源證據卡 → 大綱 → 使用者確認 → 逐頁稿 → 獨立忠實度審查 → HTML 排版 → 呈現檢查 → 交付。</p>
+<table>
+<thead>
+<tr>
+<th>節點</th>
+<th>可讀取的資料</th>
+<th>交付物與檢查</th>
+<th>失敗退回</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>查詢</td>
+<td>需求、Wiki、主張索引</td>
+<td>retrieval.json；薄膜、微影、蝕刻均有條目</td>
+<td>資料不足就停止並列缺口</td>
+</tr>
+<tr>
+<td>證據卡</td>
+<td>一份來源筆記及該來源的引用頁碼</td>
+<td>cards/Sxx.json；五份皆有實際採用主張</td>
+<td>該來源卡；必要時回原頁</td>
+</tr>
+<tr>
+<td>大綱</td>
+<td>查詢結果、證據卡</td>
+<td>outline.json 與可閱讀大綱；每頁一個目的</td>
+<td>大綱；缺證據才回查詢</td>
+</tr>
+<tr>
+<td>人工關卡</td>
+<td>大綱與配圖計畫</td>
+<td>使用者明確同意此版大綱，綁定檔案摘要</td>
+<td>修改大綱後再次確認</td>
+</tr>
+<tr>
+<td>逐頁稿</td>
+<td>已確認大綱、該頁對應卡</td>
+<td>drafts；正文、圖說、測驗及回饋都凍結</td>
+<td>指定頁面</td>
+</tr>
+<tr>
+<td>獨立審查</td>
+<td>逐頁稿與來源，隔離作者對話</td>
+<td>review；只列判斷、問題、證據，不自行修改</td>
+<td>錯誤頁面或錯誤卡</td>
+</tr>
+<tr>
+<td>排版</td>
+<td>審查通過逐頁稿</td>
+<td>HTML；不得重寫正文、圖說、測驗或回饋</td>
+<td>排版；文字太長退回逐頁稿</td>
+</tr>
+<tr>
+<td>呈現檢查</td>
+<td>HTML、凍結逐頁稿</td>
+<td>鍵盤、手機、截圖、列印 PDF 與文字一致性紀錄</td>
+<td>排版或逐頁稿</td>
+</tr>
+<tr>
+<td>交付</td>
+<td>所有實際紀錄</td>
+<td>報告與反思</td>
+<td>有未解問題不得宣稱完成</td>
+</tr>
+</tbody></table>
+<h2>局部 Loop 與停止條件</h2>
+<p>每個修訂節點最多重做兩次，第三次仍需修訂就停止，呈現問題與需要的決策。來源不足、引用頁碼不明、待確認科學主張，立即停止受影響內容；不得自行填補。修改上游成果後，下游確認與審查失效，需重新執行。審查與修訂分工，程式檢查不代替科學內容審查。</p>
+<h2>本次落地範圍</h2>
+<p>執行 <code>node scripts/workflow.mjs prepare</code>，建立第二版的查詢、五份來源卡、大綱與狀態。這是從已 ingest 的筆記整理引用卡，不是重新閱讀五份 PDF，也不是獨立 AI 審查。來源卡保留完整來源筆記與引用位置；跨來源整合主張只用來定位，不宣稱各單一來源都支持整句。</p>
+<p>執行 <code>node scripts/workflow.mjs status</code> 查看關卡。重跑 prepare 前必須明確處理現有成果，不會覆寫紀錄。人工確認前曾實測拒絕跳到排版；現在本輪狀態為 complete，實際退回與複驗見 <a href="v2-check-report.html">執行報告</a>。</p>
+<p>使用者已確認大綱，並同意隔離作者對話的獨立 AI 審查。後半段由 <code>scripts/graph-control.mjs</code> 控制：approve → freeze → review → render → complete。審查退回時進入 revision_required，再 freeze 會計算修訂次數，超過兩次即停止。每個命令會核對大綱、知識來源、凍結稿件或成果的版本摘要。建置程式也會拒絕未通過審查或與凍結稿不同的內容。</p>
+<p>這是「AI 執行節點＋程式控制關卡」的檔案式 Graph，不是無人值守的自主生成服務。讀寫範圍是執行契約；只有關卡與版本檢查由程式強制執行，不宣稱具有作業系統層級的節點權限隔離。版面修訂須人工記錄次數並重新檢查；目前程式強制上限的是內容修訂。</p>
+<h2>與第一版的差異及目前反思</h2>
+<p>第一版將查詢、大綱與生成接得太緊，缺少可留下版本證據的人工關卡；第一版的程式及瀏覽檢查也不能代表獨立內容審查。現在把證據覆蓋與大綱確認移到生成前，先停下來查核再往後走。沒有足夠第二版執行紀錄，尚不能判定哪個節點「最常」出錯。</p>
+<p>第二版實際大綱：<a href="outline-v2.html">outline-v2.md</a>。本輪初審發現兩項阻擋問題，修訂一次後複審通過；這是一次執行紀錄，不足以推論長期錯誤頻率。舊流程留存於 <a href="graph.html">graph.md</a>，僅作第一版歷史。</p>
+</main></body></html>

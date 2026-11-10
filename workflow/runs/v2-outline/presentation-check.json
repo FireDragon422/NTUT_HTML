@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-10T11:45:42.478Z",
+  "html_sha256": "4d33885ed4dda79c6135cbde4b2d2fdfdc9676e7b0b3df717d4e29c8590200c9",
+  "passed": true,
+  "browser_checks": 87,
+  "print_pages": 15,
+  "visual_inspected": true,
+  "visual_scope": "全部15頁桌面與手機縮圖；第12頁大圖；列印第3、5頁大圖；未聲稱逐頁原尺寸精讀。",
+  "print_sha256": "4e7c1589008be90c14b4d42eb9022f2f0ad99098fe6d4706b841f18b53a99f90"
+}

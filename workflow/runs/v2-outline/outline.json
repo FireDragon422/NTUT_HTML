@@ -1,0 +1,229 @@
+[
+  {
+    "page": 1,
+    "title": "晶片上的微小結構怎麼做出來？",
+    "objective": "半導體製程入門",
+    "wiki": "W01",
+    "claims": [
+      "C01",
+      "C02"
+    ],
+    "cards": [
+      "S04"
+    ],
+    "visual": "晶圓封面"
+  },
+  {
+    "page": 2,
+    "title": "晶圓與晶片",
+    "objective": "先認識加工的對象",
+    "wiki": "W01",
+    "claims": [
+      "C01",
+      "C02",
+      "C16"
+    ],
+    "cards": [
+      "S04"
+    ],
+    "visual": "晶圓與裸晶放大圖"
+  },
+  {
+    "page": 3,
+    "title": "製程中的一段圖案轉移",
+    "objective": "先看每一步的任務",
+    "wiki": "W03",
+    "claims": [
+      "C02",
+      "C05"
+    ],
+    "cards": [
+      "S04",
+      "S03",
+      "S05"
+    ],
+    "visual": "四步圖案轉移圖"
+  },
+  {
+    "page": 4,
+    "title": "薄膜承擔不同功能",
+    "objective": "材料與位置決定用途",
+    "wiki": "W02",
+    "claims": [
+      "C03"
+    ],
+    "cards": [
+      "S04"
+    ],
+    "visual": "薄膜分層剖面"
+  },
+  {
+    "page": 5,
+    "title": "兩類沉積方式",
+    "objective": "CVD 與 PVD",
+    "wiki": "W02",
+    "claims": [
+      "C04",
+      "C15"
+    ],
+    "cards": [
+      "S01",
+      "S04"
+    ],
+    "visual": "CVD／PVD 對照表"
+  },
+  {
+    "page": 6,
+    "title": "微影先定義光阻圖案",
+    "objective": "光阻是感光材料",
+    "wiki": "W03",
+    "claims": [
+      "C05"
+    ],
+    "cards": [
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "visual": "沿用圖案轉移圖，聚焦光阻"
+  },
+  {
+    "page": 7,
+    "title": "蝕刻把圖案轉入材料",
+    "objective": "兩次轉移，各有任務",
+    "wiki": "W03",
+    "claims": [
+      "C05",
+      "C06"
+    ],
+    "cards": [
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "visual": "沿用圖案轉移圖，聚焦材料移除"
+  },
+  {
+    "page": 8,
+    "title": "蝕刻要分開看三件事",
+    "objective": "快慢、方向與材料差異",
+    "wiki": "W04",
+    "claims": [
+      "C07",
+      "C08",
+      "C13"
+    ],
+    "cards": [
+      "S03",
+      "S04",
+      "S05",
+      "S02"
+    ],
+    "visual": "方向性與選擇比示意"
+  },
+  {
+    "page": 9,
+    "title": "選擇比的簡單計算",
+    "objective": "假設算例，不是設備規格",
+    "wiki": "W04",
+    "claims": [
+      "C07",
+      "C14"
+    ],
+    "cards": [
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "visual": "假設數值滑桿"
+  },
+  {
+    "page": 10,
+    "title": "濕式與乾式蝕刻",
+    "objective": "分類不能取代條件",
+    "wiki": "W05",
+    "claims": [
+      "C09",
+      "C10",
+      "C13"
+    ],
+    "cards": [
+      "S03",
+      "S05",
+      "S02"
+    ],
+    "visual": "濕式／乾式比較表"
+  },
+  {
+    "page": 11,
+    "title": "RIE 結合兩種作用",
+    "objective": "反應性離子蝕刻",
+    "wiki": "W06",
+    "claims": [
+      "C10",
+      "C11"
+    ],
+    "cards": [
+      "S02"
+    ],
+    "visual": "RIE 剖面圖"
+  },
+  {
+    "page": 12,
+    "title": "真空讓氣體環境可控制",
+    "objective": "平均自由程是兩次碰撞間的平均距離",
+    "wiki": "W06",
+    "claims": [
+      "C12",
+      "C15"
+    ],
+    "cards": [
+      "S01",
+      "S04"
+    ],
+    "visual": "壓力與碰撞概念圖（待製作）"
+  },
+  {
+    "page": 13,
+    "title": "完成圖案，也要顧及品質",
+    "objective": "一個指標不夠",
+    "wiki": "W04",
+    "claims": [
+      "C13",
+      "C14"
+    ],
+    "cards": [
+      "S03",
+      "S02",
+      "S05",
+      "S04"
+    ],
+    "visual": "品質檢查清單"
+  },
+  {
+    "page": 14,
+    "title": "三題，檢查你是否理解",
+    "objective": "可以重選，答案附理由",
+    "wiki": "W07",
+    "claims": [
+      "C05",
+      "C07",
+      "C09"
+    ],
+    "cards": [
+      "S03",
+      "S04",
+      "S05"
+    ],
+    "visual": "測驗與解說"
+  },
+  {
+    "page": 15,
+    "title": "閱讀與延伸",
+    "objective": "五份來源，一份可追溯的 Wiki",
+    "wiki": "W07",
+    "claims": [],
+    "cards": [],
+    "visual": "來源清單與選讀範圍"
+  }
+]

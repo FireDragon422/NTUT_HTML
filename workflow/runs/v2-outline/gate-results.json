@@ -1,0 +1,35 @@
+{
+  "tests": [
+    {
+      "label": "未審查不得排版",
+      "passed": true,
+      "observed": "審查尚未通過，不可排版"
+    },
+    {
+      "label": "未呈現檢查不得交付",
+      "passed": true,
+      "observed": "不在呈現檢查節點"
+    },
+    {
+      "label": "不得重複確認以重設狀態",
+      "passed": true,
+      "observed": "不在待確認關卡"
+    },
+    {
+      "label": "大綱變動會阻擋下游",
+      "passed": true,
+      "observed": "大綱版本變更，需重新確認"
+    },
+    {
+      "label": "來源變動會阻擋下游",
+      "passed": true,
+      "observed": "知識來源已變更，需回查詢節點"
+    },
+    {
+      "label": "第三次內容修訂停止",
+      "passed": true,
+      "observed": "修訂已達上限，停止並請求決策"
+    }
+  ],
+  "passed": true
+}

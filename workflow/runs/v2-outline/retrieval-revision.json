@@ -1,0 +1,37 @@
+{
+  "reason": "獨立審查要求：補既有主張的詞彙定義與S02採用頁碼；主題、順序與教學目的不變。",
+  "previous": {
+    "wiki/W01.md": "c0f34ed61e368d8efc44f7dfe19e5cffa6a1de634d6a851585b682472d18bc5f",
+    "wiki/W03.md": "e3ae6ad385148d3ae39329b70a5a395255f871bc09e02797c15ada5d5b395410",
+    "wiki/W02.md": "d35db79daf11a34a718353aeee5007883289ce95463ea6b35f0526114015eb3a",
+    "wiki/W04.md": "bd1aabb1a46a0074b9e642e83ecd95fd67a320f2e9dbca5e266973bb52a96914",
+    "wiki/W05.md": "02737a99006683d8e46b59ba0384ca14450d1882b0c96a0b1f67721e8c84b45c",
+    "wiki/W06.md": "ee509c2270ce91fb331b53655c60f7c93ebe04d14dd8698df2de190f83d852a8",
+    "wiki/W07.md": "a7c8ce19fc8849be217cca67949faac72a46a48fc6a2daeb8de32dd03f9b7b58",
+    "sources/evidence.json": "a94109c548c29ba49c361aa18897b7236ad0d05fe44ad2b42f624c4b09ffe55b",
+    "sources/manifest.json": "a1dc55f3de4e4ad051b1c81cbf0e08068cafd1a63d2a509c2af63d378232143b",
+    "slides/content.json": "1ea765ca95f1bdf204863e0cbf4b101f0f9408c3a78d948f49fe7895028bf115",
+    "sources/S01.md": "d6f9beb7187a5a2163a3f9d8e94f6ebd44090da7a5eb9d8f0b6f4fb8f87fde2a",
+    "sources/S02.md": "440db2c053dba17ef1c5a29bd433ebade2991f58fe77b4722022b15344769dfd",
+    "sources/S03.md": "cb55fbefab8cb8c096316922c7d3265f47dcf3f160ae97b3c6946a5cc0a31aaf",
+    "sources/S04.md": "951ea736736f1f85899657beb6c9b9c529045e591d8e23576091f15df35a95af",
+    "sources/S05.md": "2844d5231ed6e847e61a99c84acaa12a5d758c4fa1eb4b804b4e80ce3948f35c"
+  },
+  "current": {
+    "wiki/W01.md": "c72ab055791a3824b26b88523761af33fa25ba961764b71058d71c6e87cacd80",
+    "wiki/W03.md": "e3ae6ad385148d3ae39329b70a5a395255f871bc09e02797c15ada5d5b395410",
+    "wiki/W02.md": "f8eba9c8a3b6e61afe50c617e674cddbe16d5fc8226c14e5c3c6ef79d882e6df",
+    "wiki/W04.md": "bd1aabb1a46a0074b9e642e83ecd95fd67a320f2e9dbca5e266973bb52a96914",
+    "wiki/W05.md": "5297d1818ced469d0ccd8bdff9946a361e1d6d83e4548a34d27fe2adfd6e48bd",
+    "wiki/W06.md": "ee509c2270ce91fb331b53655c60f7c93ebe04d14dd8698df2de190f83d852a8",
+    "wiki/W07.md": "a7c8ce19fc8849be217cca67949faac72a46a48fc6a2daeb8de32dd03f9b7b58",
+    "sources/evidence.json": "a94109c548c29ba49c361aa18897b7236ad0d05fe44ad2b42f624c4b09ffe55b",
+    "sources/manifest.json": "a1dc55f3de4e4ad051b1c81cbf0e08068cafd1a63d2a509c2af63d378232143b",
+    "slides/content.json": "1ea765ca95f1bdf204863e0cbf4b101f0f9408c3a78d948f49fe7895028bf115",
+    "sources/S01.md": "d6f9beb7187a5a2163a3f9d8e94f6ebd44090da7a5eb9d8f0b6f4fb8f87fde2a",
+    "sources/S02.md": "8a90d9130af742dabd7144590b88a2f8785c496aaf7150474e5421a45900afca",
+    "sources/S03.md": "cb55fbefab8cb8c096316922c7d3265f47dcf3f160ae97b3c6946a5cc0a31aaf",
+    "sources/S04.md": "951ea736736f1f85899657beb6c9b9c529045e591d8e23576091f15df35a95af",
+    "sources/S05.md": "2844d5231ed6e847e61a99c84acaa12a5d758c4fa1eb4b804b4e80ce3948f35c"
+  }
+}

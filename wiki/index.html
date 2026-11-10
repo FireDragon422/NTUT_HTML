@@ -1,0 +1,204 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以五份教材建立的半導體製程 LLM Wiki 與零基礎教學簡報。"><title>半導體製程 Wiki</title><link rel="stylesheet" href="../slides/style.css"></head><body><header class="topbar"><a href="../index.html">半導體製程 LLM Wiki</a><nav class="toolbar"><a href="../slides/index.html">教學簡報</a></nav></header><div class="wiki-layout"><aside class="wiki-side"><label for="search">搜尋 Wiki 內容</label><input id="search" type="search" placeholder="例如：選擇比、真空"><p id="search-status" role="status">共 7 個條目</p><nav><a href="#W01">W01｜晶圓、晶片與製程全貌</a><a href="#W02">W02｜薄膜與沉積</a><a href="#W03">W03｜微影與圖案轉移</a><a href="#W04">W04｜蝕刻的方向性與選擇比</a><a href="#W05">W05｜濕式、乾式與 RIE</a><a href="#W06">W06｜真空與電漿的作用</a><a href="#W07">W07｜名詞、誤解與自我檢查</a></nav><a href="../sources/README.html">來源清單</a><a href="../sources/evidence.html">主張與頁碼</a></aside><main class="doc" id="articles"><h1>半導體製程 Wiki</h1><p>以概念為索引，讓每個解釋都能追溯到教材。</p><article class="wiki-article" id="W01"><h2>W01｜晶圓、晶片與製程全貌</h2>
+<h2>白話理解</h2>
+<p>晶圓（wafer）是製造元件的基底平台；同一片晶圓上可以安排多個晶片（die）區域。矽（silicon）是半導體材料，可以透過摻雜調整導電特性。[C01, C16]</p>
+<p>晶片結構包含不同材料及區域。製程會組合形成材料層、圖案化、摻雜及熱處理，依設計需求多次使用，不是做完一次蝕刻就得到完整晶片。[C02]</p>
+<h2>本教學的範圍</h2>
+<p>本教學選取「形成薄膜、定義圖案、移除材料」的一段來理解加工。摻雜與熱處理只作定位，不展開元件物理或完整 CMOS 製程。</p>
+<h2>自我檢查</h2>
+<p>晶圓與晶片差在哪裡？答案：前者是製造平台，後者是平台上的個別電路區域／切割後的晶粒。</p>
+<p>接著閱讀：<a href="W02.html">薄膜</a>、<a href="W03.html">圖案轉移</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C01</strong>：<a href="../sources/S04.html">S04</a> PDF 90, 91（書頁 70–71）。</li>
+<li><strong>C02</strong>：<a href="../sources/S04.html">S04</a> PDF 91, 92, 93, 94, 95（書頁 71–75）。</li>
+<li><strong>C16</strong>：<a href="../sources/S04.html">S04</a> PDF 51, 52（書頁 31–32）。</li>
+</ul>
+<h2>初次閱讀詞彙</h2>
+<p>摻雜（doping）：在半導體中加入少量特定雜質，以調整導電特性。[C16]</p>
+</article><article class="wiki-article" id="W02"><h2>W02｜薄膜與沉積</h2>
+<h2>白話理解</h2>
+<p>薄膜（thin film）是在表面形成的一層材料。它可以導電、絕緣，或具有半導體性質，功能取決於材料與所在結構。[C03]</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>入門說法</th>
+<th>邊界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>化學氣相沉積 CVD</td>
+<td>透過氣相前驅物的化學反應形成固體膜</td>
+<td>各種 CVD 的壓力與能量來源不同</td>
+</tr>
+<tr>
+<td>物理氣相沉積 PVD</td>
+<td>以蒸鍍、濺鍍等方式供應沉積材料</td>
+<td>不能僅由名稱判定所有覆蓋性與品質</td>
+</tr>
+</tbody></table>
+<p>分類依據為 C04。形成薄膜還涉及到達、吸附、表面移動、成核與成長，所以膜品質不能簡化成「只要把壓力降得更低」。[C15]</p>
+<h2>教學類比</h2>
+<p>可暫時想成在表面增加一層材料，但不是一般塗漆：原子與分子層級的反應、移動及材料性質會影響結果。</p>
+<p>接著閱讀：<a href="W03.html">圖案轉移</a>、<a href="W06.html">真空與電漿</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C03</strong>：<a href="../sources/S04.html">S04</a> PDF 92, 93, 380（書頁 72–73、360）。</li>
+<li><strong>C04</strong>：<a href="../sources/S01.html">S01</a> PDF 21；<a href="../sources/S04.html">S04</a> PDF 380, 383, 384（書頁 360、363–364）。</li>
+<li><strong>C15</strong>：<a href="../sources/S01.html">S01</a> PDF 18, 19, 20；<a href="../sources/S04.html">S04</a> PDF 384（書頁 364）。</li>
+</ul>
+<h2>初次閱讀詞彙</h2>
+<p>沉積（deposition）：把材料送到表面並形成材料層。化學氣相沉積的英文是 chemical vapor deposition；物理氣相沉積是 physical vapor deposition。蒸鍍（evaporation）使來源材料汽化後到達表面；濺鍍（sputtering）藉粒子轟擊使來源材料離開並沉積。[C03, C04]</p>
+</article><article class="wiki-article" id="W03"><h2>W03｜微影與圖案轉移</h2>
+<h2>先分清兩次轉移</h2>
+<p>微影（lithography）利用感光材料光阻（photoresist）形成所需的保護圖案。顯影之後，材料層上方有保護區與開口。蝕刻（etching）再移除開口下方的材料，將圖案轉移到薄膜。[C05]</p>
+<h2>教學用流程</h2>
+<ol>
+<li>在基底上形成薄膜。</li>
+<li>塗佈光阻，經曝光與顯影定義開口。</li>
+<li>蝕刻開口暴露的材料。</li>
+<li>去除光阻，留下已圖案化的材料層。</li>
+</ol>
+<p>這是功能層次的簡化，省略清洗、烘烤、對準及量測細節。正負光阻對曝光的反應不同，本教學不預設所有曝光區都會留下或被去除。[C05]</p>
+<p>形成材料層與圖案化會依設計反覆使用，並搭配摻雜與熱處理等操作；一次圖案轉移並不等於完成整顆晶片。[C02]</p>
+<h2>遮罩的兩個語境</h2>
+<p>微影時的光罩定義曝光圖案；蝕刻時的遮罩保護材料。蝕刻遮罩可由光阻構成，也可以用氧化物／氮化物硬遮罩，不能把它們全當成同一片物件。[C06]</p>
+<p>接著閱讀：<a href="W04.html">蝕刻指標</a>、<a href="W05.html">濕式與乾式</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C02</strong>：<a href="../sources/S04.html">S04</a> PDF 91–95（書頁 71–75）。</li>
+<li><strong>C05</strong>：<a href="../sources/S03.html">S03</a> PDF 4；<a href="../sources/S04.html">S04</a> PDF 215, 216, 217（書頁 195–197）；<a href="../sources/S05.html">S05</a> PDF 616, 617（書頁 609–610）。</li>
+<li><strong>C06</strong>：<a href="../sources/S03.html">S03</a> PDF 5；<a href="../sources/S05.html">S05</a> PDF 616（書頁 609）。</li>
+</ul>
+</article><article class="wiki-article" id="W04"><h2>W04｜蝕刻的方向性與選擇比</h2>
+<h2>三個分開的問題</h2>
+<table>
+<thead>
+<tr>
+<th>名詞</th>
+<th>問題</th>
+<th>白話理解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>蝕刻速率</td>
+<td>移除多快？</td>
+<td>每單位時間移除多少厚度</td>
+</tr>
+<tr>
+<td>方向性</td>
+<td>朝哪個方向移除？</td>
+<td>側向與垂直方向的速率關係</td>
+</tr>
+<tr>
+<td>選擇比</td>
+<td>比較容易移除哪個材料？</td>
+<td>目標材料速率除以參照材料速率</td>
+</tr>
+</tbody></table>
+<p>定義依據 C07、C08、C13。各方向速率相同稱等向性（isotropic）；不同稱非等向性（anisotropic）。側向移除會使圖案在遮罩下方產生側蝕。[C08]</p>
+<h2>假設算例</h2>
+<p>假設目標薄膜的速率是 100 nm/min，光阻速率是 5 nm/min，則相對光阻的選擇比為 100 ÷ 5 = 20。刻掉 200 nm 薄膜需 2 分鐘，期間消耗約 10 nm 光阻。這是依 C07 定義自訂的算例，不是設備規格。</p>
+<p>算例假設速率恆定、均勻、未加入過蝕刻。實際膜厚與速率的差異可能需要額外時間，並增加遮罩與下層損耗。[C14]</p>
+<h2>常見誤解</h2>
+<p>選擇比高不保證側壁垂直；方向性強也不代表對其他材料沒有損傷。製程需要同時考慮均勻性、產物移除與損傷。[C13]</p>
+<p>接著閱讀：<a href="W05.html">方法比較</a>、<a href="W07.html">名詞與自測</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C07</strong>：<a href="../sources/S03.html">S03</a> PDF 8, 9, 21；<a href="../sources/S04.html">S04</a> PDF 279（書頁 259）；<a href="../sources/S05.html">S05</a> PDF 616, 617（書頁 609–610）。</li>
+<li><strong>C08</strong>：<a href="../sources/S03.html">S03</a> PDF 22, 24；<a href="../sources/S05.html">S05</a> PDF 617, 618（書頁 610–611）。</li>
+<li><strong>C13</strong>：<a href="../sources/S03.html">S03</a> PDF 8；<a href="../sources/S02.html">S02</a> PDF 20, 22；<a href="../sources/S05.html">S05</a> PDF 618（書頁 611）。</li>
+<li><strong>C14</strong>：<a href="../sources/S03.html">S03</a> PDF 21, 23；<a href="../sources/S04.html">S04</a> PDF 277, 278, 279（書頁 257–259）。</li>
+</ul>
+</article><article class="wiki-article" id="W05"><h2>W05｜濕式、乾式與 RIE</h2>
+<h2>依機制比較</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>主要理解方式</th>
+<th>必須保留的限制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>濕式蝕刻 wet etching</td>
+<td>液態藥液與材料發生化學作用</td>
+<td>常見等向性，但矽的晶向相依蝕刻是例外</td>
+</tr>
+<tr>
+<td>物理乾式蝕刻</td>
+<td>離子傳遞動量、移除材料</td>
+<td>方向性可強，但材料選擇性可能較低</td>
+</tr>
+<tr>
+<td>化學乾式蝕刻</td>
+<td>反應性物種與材料反應</td>
+<td>乾式不保證側壁垂直</td>
+</tr>
+<tr>
+<td>反應性離子蝕刻 RIE</td>
+<td>結合離子作用與反應性物種</td>
+<td>效果依材料、氣體、能量及其他條件而異</td>
+</tr>
+</tbody></table>
+<p>依據 C09、C10、C11。分類用於解釋機制，不是所有設備的完整分類表。不能將「濕式、乾式」直接等同「等向、非等向」。</p>
+<h2>工程上如何選擇</h2>
+<p>先看目標材料、想保護的材料與圖案形狀，再比較選擇比、方向性、均勻性與損傷。沒有在所有條件都最好的單一方法。[C13]</p>
+<p>延伸閱讀：<a href="W04.html">指標</a>、<a href="W06.html">電漿</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C09</strong>：<a href="../sources/S03.html">S03</a> PDF 11, 12, 18, 22；<a href="../sources/S05.html">S05</a> PDF 619（書頁 612）。</li>
+<li><strong>C10</strong>：<a href="../sources/S02.html">S02</a> PDF 3, 8, 9, 10, 14, 17。</li>
+<li><strong>C11</strong>：<a href="../sources/S02.html">S02</a> PDF 4, 8, 12, 14。</li>
+<li><strong>C13</strong>：<a href="../sources/S03.html">S03</a> PDF 8；<a href="../sources/S02.html">S02</a> PDF 20, 22；<a href="../sources/S05.html">S05</a> PDF 618（書頁 611）。</li>
+</ul>
+<h2>初次閱讀詞彙</h2>
+<p>等向性（isotropy）：各方向移除速率相同。晶向（crystal orientation）：晶體內原子排列的方向；有些濕式蝕刻在不同晶向的速率不同。[C09]</p>
+</article><article class="wiki-article" id="W06"><h2>W06｜真空與電漿的作用</h2>
+<h2>真空不是完全空無一物</h2>
+<p>平均自由程（mean free path）是粒子兩次碰撞之間的平均行進距離。氣體種類與溫度等條件相近時，降低壓力通常會增加這個距離；真空系統用來控制腔體中的氣體環境。[C12]</p>
+<p>把它想成減少擁擠度是教學類比，不代表粒子完全不碰撞，也不代表所有製程都應採最低壓力。</p>
+<h2>電漿與蝕刻</h2>
+<p>電漿（plasma）包含電子、離子與中性物種。離子可提供方向性的轟擊作用；反應性中性物種可參與表面化學反應。RIE 利用兩者的作用，不應將自由基全部當成帶電離子。[C10, C11]</p>
+<h2>本次不做什麼推論</h2>
+<p>壓力會影響碰撞與傳輸，但薄膜品質也涉及表面移動與成長等因素。因此不主張「壓力越低，結果一定越好」。[C12, C15]</p>
+<p>回顧：<a href="W02.html">薄膜</a>、<a href="W05.html">乾式蝕刻</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C10</strong>：<a href="../sources/S02.html">S02</a> PDF 3, 8, 9, 10, 14, 17。</li>
+<li><strong>C11</strong>：<a href="../sources/S02.html">S02</a> PDF 4, 8, 12, 14。</li>
+<li><strong>C12</strong>：<a href="../sources/S01.html">S01</a> PDF 2, 3, 4, 9, 12, 15。</li>
+<li><strong>C15</strong>：<a href="../sources/S01.html">S01</a> PDF 18, 19, 20；<a href="../sources/S04.html">S04</a> PDF 384（書頁 364）。</li>
+</ul>
+</article><article class="wiki-article" id="W07"><h2>W07｜名詞、誤解與自我檢查</h2>
+<h2>名詞速查</h2>
+<ul>
+<li>晶圓 wafer：供加工的基底平台。[C01]</li>
+<li>光阻 photoresist：用於圖案轉移的感光材料。[C05]</li>
+<li>微影 lithography：定義光阻圖案的程序。[C05]</li>
+<li>蝕刻 etching：移除材料、轉移圖案的程序。[C05]</li>
+<li>選擇比 selectivity：目標材料速率／參照材料速率。[C07]</li>
+<li>等向性 isotropy：各方向蝕刻速率相同。[C08]</li>
+<li>RIE：結合離子與反應性物種的蝕刻方式。[C10]</li>
+</ul>
+<h2>自我檢查</h2>
+<ol>
+<li>曝光與顯影後，薄膜的圖案就一定完成了嗎？本教學流程中還要蝕刻，將圖案轉入材料。[C05]</li>
+<li>選擇比 20 表示什麼？對指定參照材料，目標材料的蝕刻速率是其 20 倍。[C07]</li>
+<li>所有濕式蝕刻都等向嗎？不是，晶向相依的矽蝕刻是例外。[C09]</li>
+<li>真空裡完全沒有氣體嗎？不是，仍需考慮氣體與碰撞。[C12]</li>
+</ol>
+<h2>教材使用界線</h2>
+<p>以上內容依提供教材的基礎原理整理。來源年代較早，未延伸成最新節點或產業現況的結論。</p>
+<p>回到 <a href="README.html">Wiki 索引</a>。</p>
+<h2>證據與頁碼</h2>
+<ul>
+<li><strong>C01</strong>：<a href="../sources/S04.html">S04</a> PDF 90, 91（書頁 70–71）。</li>
+<li><strong>C05</strong>：<a href="../sources/S03.html">S03</a> PDF 4；<a href="../sources/S04.html">S04</a> PDF 215, 216, 217（書頁 195–197）；<a href="../sources/S05.html">S05</a> PDF 616, 617（書頁 609–610）。</li>
+<li><strong>C07</strong>：<a href="../sources/S03.html">S03</a> PDF 8, 9, 21；<a href="../sources/S04.html">S04</a> PDF 279（書頁 259）；<a href="../sources/S05.html">S05</a> PDF 616, 617（書頁 609–610）。</li>
+<li><strong>C08</strong>：<a href="../sources/S03.html">S03</a> PDF 22, 24；<a href="../sources/S05.html">S05</a> PDF 617, 618（書頁 610–611）。</li>
+<li><strong>C09</strong>：<a href="../sources/S03.html">S03</a> PDF 11, 12, 18, 22；<a href="../sources/S05.html">S05</a> PDF 619（書頁 612）。</li>
+<li><strong>C10</strong>：<a href="../sources/S02.html">S02</a> PDF 3, 8, 9, 10, 14, 17。</li>
+<li><strong>C12</strong>：<a href="../sources/S01.html">S01</a> PDF 2, 3, 4, 9, 12, 15。</li>
+</ul>
+</article><p class="empty-search" hidden>沒有符合的條目，試試「蝕刻」或「光阻」。</p></main></div><script>const input=document.querySelector('#search'),articles=[...document.querySelectorAll('.wiki-article')];input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();articles.forEach(a=>a.hidden=!a.textContent.toLowerCase().includes(q));const n=articles.filter(a=>!a.hidden).length;document.querySelector('#search-status').textContent='找到 '+n+' 個條目';document.querySelector('.empty-search').hidden=n>0});document.querySelectorAll('.wiki-side nav a').forEach(a=>a.addEventListener('click',()=>{input.value='';input.dispatchEvent(new Event('input'))}));</script></body></html>

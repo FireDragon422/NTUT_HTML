@@ -1,0 +1,105 @@
+{
+  "source": "S03",
+  "kind": "來源筆記與引用定位卡；待獨立審查",
+  "note": "# S03｜Etching（含課程回饋）\r\n\r\n狀態：已完成範圍限定 ingest。日期：2026-11-10。\r\n\r\n- 總頁數：28 PDF 頁。\r\n- 讀取方式：文字擷取與內容核對。\r\n- 範圍：PDF 1–28；排除課程回饋 1–3，採用 4–5、8–12、18、21–24。\r\n- 採用主張：C05, C06, C07, C08, C09, C13, C14。\r\n\r\n## 本次整理\r\n- PDF 4–5 說明圖案轉移與軟/硬遮罩。\r\n- PDF 8–9 分開定義均勻性、速率、選擇比、方向性。\r\n- PDF 11–18 濕式機制及矽晶向差異；PDF 22 明確列出晶向相依的例外。\r\n- PDF 21 用目標與遮罩速率比評估遮罩消耗；PDF 23 示範厚度及速率變異造成的過蝕刻需求。\r\n- PDF 24 將側向/垂直移除分開，與 S05 的方向性定義對讀。\r\n\r\n## 限制與取捨\r\nPDF 1–3 是課程意見，不併入半導體 Wiki。PDF 26–27 表圖缺失；PDF 25 自帶 typo 提示，不用作初學算例。PDF 9 的濕/乾對照是簡化分類，必須搭配 S02 的化學乾蝕刻與 S03 的晶向例外。\r\n\r\n## 整合位置\r\n\r\n對應主張與頁碼見 [證據索引](evidence.json)。閱讀 [Wiki 索引](../wiki/README.md)。\r\n\r\n檔案 SHA-256：`2332fae02bda5f8c104222f90c5efe505ba26905d0d4a6aef0682a9032a9b05d`。\r\n",
+  "references": [
+    {
+      "claim_id": "C05",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            4
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C06",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            5
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C07",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            8,
+            9,
+            21
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C08",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            22,
+            24
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C09",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            11,
+            12,
+            18,
+            22
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C13",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            8
+          ],
+          "printed_pages": ""
+        }
+      ]
+    },
+    {
+      "claim_id": "C14",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S03",
+          "pdf_pages": [
+            21,
+            23
+          ],
+          "printed_pages": ""
+        }
+      ]
+    }
+  ]
+}

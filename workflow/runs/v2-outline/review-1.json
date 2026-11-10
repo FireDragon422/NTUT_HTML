@@ -1,0 +1,12 @@
+{
+  "draft_sha256": "b3abf71e4b778b09750116e89fbe6ea4d4a08552ebae0b9f8f257d99ef749f03",
+  "independent": true,
+  "verdict": "revise",
+  "reviewer": "independent_review（隔離作者對話）",
+  "issues": [
+    {"page":"2–5、7、9–10、13","blocking":true,"problem":"重要術語首次介紹缺英文與白話定義；CVD/PVD 缺全名，蒸鍍與濺鍍亦未解釋。","suggestion":"補短定義，進階詞刪除或移入有定義的補充。"},
+    {"page":14,"blocking":true,"problem":"第二題比較選擇比與方向性，claims 缺 C08。","suggestion":"補 C08 引用。"},
+    {"page":"11、13","blocking":false,"problem":"S02 採用頁碼未列 evidence 已引用的 PDF 4、20。","suggestion":"補齊來源筆記採用頁碼。"}
+  ],
+  "scope":"讀完15頁稿件、S01–S05筆記、C01–C16與W01–W07；實看五張PNG，vacuum.svg僅讀原始碼。未核原PDF、HTML或列印。來源筆記層級審查。此檔忠實摘要獨立審查者回報。"
+}

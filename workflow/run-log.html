@@ -1,0 +1,110 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="以五份教材建立的半導體製程 LLM Wiki 與零基礎教學簡報。"><title>實際執行紀錄</title><link rel="stylesheet" href="../slides/style.css"></head><body><header class="topbar"><a href="../index.html">半導體製程 LLM Wiki</a><nav class="toolbar"><a href="../slides/index.html">教學簡報</a></nav></header><main class="doc"><h1>實際執行紀錄</h1>
+<p>日期：2026-11-10（Asia/Taipei）。本次為一次端到端執行，包含前期盤點，非多輪統計實驗。</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>節點</th>
+<th>實際觀察</th>
+<th>處置與結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R01</td>
+<td>讀取環境</td>
+<td>PyMuPDF 不存在，首次讀取失敗</td>
+<td>改用已有的 pypdf；成功讀取講義</td>
+</tr>
+<tr>
+<td>R02</td>
+<td>文字輸出</td>
+<td>預設 cp950 無法輸出部分數學符號，程序中斷</td>
+<td>明確使用 UTF-8；重新讀取成功</td>
+</tr>
+<tr>
+<td>R03</td>
+<td>可讀性檢查</td>
+<td>S05 前段擷取文字為空</td>
+<td>使用 pypdfium2 渲染，影像閱讀 PDF 616–619；確認書頁 609–612</td>
+</tr>
+<tr>
+<td>R04</td>
+<td>來源完整性</td>
+<td>S01/S02/S03 多處原圖已移除</td>
+<td>記錄缺圖，不填造圖片；採可驗證文字及 S05 已見頁面</td>
+</tr>
+<tr>
+<td>R05</td>
+<td>內容檢查</td>
+<td>S03 的濕/乾簡化對照不足以表達例外</td>
+<td>對照 S03 PDF 22 與 S02 PDF 15，Wiki 保留晶向例外與化學乾式蝕刻</td>
+</tr>
+<tr>
+<td>R06</td>
+<td>主題確認</td>
+<td>使用者確認製程主題與零背景對象</td>
+<td>建立 AGENTS.md、需求摘要，初始化本機 Git</td>
+</tr>
+<tr>
+<td>R07</td>
+<td>Ingest</td>
+<td>5 份來源均找到可用段落，S04/S05 為章節選讀</td>
+<td>建立 5 份來源筆記、雜湊與 16 項主張</td>
+</tr>
+<tr>
+<td>R08</td>
+<td>Wiki 與查詢</td>
+<td>依初學者問題整理概念</td>
+<td>建立 7 條目與 retrieval.md，再編排 15 頁簡報</td>
+</tr>
+<tr>
+<td>R09</td>
+<td>靜態引用檢查</td>
+<td>C02 在第 3 頁使用，但 W03 缺少對應敘述</td>
+<td>補 W03 與 S04 頁碼，重建後通過</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>瀏覽環境</td>
+<td>背景 Edge 在受限環境啟動失敗</td>
+<td>經核准的執行方式啟動，完成桌面與手機測試</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>瀏覽驗證</td>
+<td>60 項互動與版面斷言通過</td>
+<td>保留結果與截圖，檢視逐頁總覽及重點頁</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>列印驗證</td>
+<td>15 個區段可見，但實際 PDF 是 23 頁</td>
+<td>發現整頁與內部元件共用樣式名稱，修正類別與列印規則</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>複驗</td>
+<td>修正後重跑 60 項斷言，均通過</td>
+<td>PDF 確認 15 頁且每頁有引用，檢視列印總覽</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>使用者回饋</td>
+<td>初版缺少圖片，文字表格不足以解釋空間結構</td>
+<td>補五張教學圖與中文圖說，增加素材及提示詞紀錄</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>圖像內容檢查</td>
+<td>蝕刻圖初稿曲面容易誤導</td>
+<td>改為簡化側蝕邊界圖，標明非精確輪廓與比例</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>補圖複驗</td>
+<td>66 項瀏覽檢查通過</td>
+<td>圖片載入、桌面手機、互動正常；PDF 15 頁且每頁有引用</td>
+</tr>
+</tbody></table>
+<p>後續建置、瀏覽與修復結果見 <a href="check-report.html">檢查報告</a>。原始教材均未上傳，未建立遠端倉庫。</p>
+</main></body></html>

@@ -1,0 +1,88 @@
+{
+  "source": "S05",
+  "kind": "來源筆記與引用定位卡；待獨立審查",
+  "note": "# S05｜Silicon VLSI Technology: Fundamentals, Practice and Modeling\r\n\r\n狀態：已完成範圍限定 ingest。日期：2026-11-10。\r\n\r\n- 總頁數：806 PDF 頁。\r\n- 讀取方式：頁面影像人工閱讀與核對。\r\n- 範圍：影像選讀：PDF 616–619（印刷頁 609–612），封面與目錄另讀；未精讀全書。\r\n- 採用主張：C05, C06, C07, C08, C09, C13。\r\n\r\n## 本次整理（影像閱讀）\r\n- PDF 616／書頁 609：第 10 章引言，薄膜移除、遮罩、濕/乾蝕刻與選擇比。\r\n- PDF 617／書頁 610：圖 10-1 的沉積、光阻、曝光、顯影、蝕刻與去光阻順序；圖 10-2 展示側蝕與遮罩侵蝕。\r\n- PDF 618／書頁 611：圖 10-3 比較方向性；正文分開說明方向性、選擇比、產物移除與損傷要求。\r\n- PDF 619／書頁 612：濕式蝕刻以化學反應移除材料，支持基本定義。\r\n\r\n## 限制與取捨\r\n文字擷取為空，改以渲染影像閱讀；未執行整書 OCR。只完成以上四頁內容 ingest，封面與目錄用於定位。這四頁 PDF 頁序比印刷頁多 7，不將差值推廣到全書。原圖只在本機核對，成品不複製整頁影像。\r\n\r\n## 整合位置\r\n\r\n對應主張與頁碼見 [證據索引](evidence.json)。閱讀 [Wiki 索引](../wiki/README.md)。\r\n\r\n檔案 SHA-256：`d72405f2f7dce4f1689b75dc46ea78912124b3e343ad93bfe824af3380f8526a`。\r\n",
+  "references": [
+    {
+      "claim_id": "C05",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            616,
+            617
+          ],
+          "printed_pages": "609–610"
+        }
+      ]
+    },
+    {
+      "claim_id": "C06",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            616
+          ],
+          "printed_pages": "609"
+        }
+      ]
+    },
+    {
+      "claim_id": "C07",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            616,
+            617
+          ],
+          "printed_pages": "609–610"
+        }
+      ]
+    },
+    {
+      "claim_id": "C08",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            617,
+            618
+          ],
+          "printed_pages": "610–611"
+        }
+      ]
+    },
+    {
+      "claim_id": "C09",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            619
+          ],
+          "printed_pages": "612"
+        }
+      ]
+    },
+    {
+      "claim_id": "C13",
+      "locator_only": true,
+      "references": [
+        {
+          "source": "S05",
+          "pdf_pages": [
+            618
+          ],
+          "printed_pages": "611"
+        }
+      ]
+    }
+  ]
+}

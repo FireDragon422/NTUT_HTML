@@ -1,0 +1,47 @@
+[
+  {
+    "time": "2026-11-10T11:32:44.038Z",
+    "event": "prepared",
+    "result": "coverage passed; paused at human outline gate"
+  },
+  {
+    "time": "2026-11-10T11:39:26.037Z",
+    "event": "approve",
+    "status": "drafting"
+  },
+  {
+    "time": "2026-11-10T11:39:50.873Z",
+    "event": "freeze",
+    "status": "awaiting_independent_review"
+  },
+  {
+    "time": "2026-11-10T11:41:39.619Z",
+    "event": "review",
+    "status": "revision_required"
+  },
+  {
+    "time": "2026-11-10T11:42:10.064Z",
+    "event": "refresh",
+    "status": "revision_required"
+  },
+  {
+    "time": "2026-11-10T11:42:10.150Z",
+    "event": "freeze",
+    "status": "awaiting_independent_review"
+  },
+  {
+    "time": "2026-11-10T11:43:09.887Z",
+    "event": "review",
+    "status": "ready_to_render"
+  },
+  {
+    "time": "2026-11-10T11:43:10.109Z",
+    "event": "render",
+    "status": "awaiting_presentation_check"
+  },
+  {
+    "time": "2026-11-10T11:45:42.559Z",
+    "event": "complete",
+    "status": "complete"
+  }
+]
